@@ -382,7 +382,10 @@ footer {
 .swiper-slide h2,
 .swiper-slide h3,
 .swiper-slide p,
-.swiper-slide span{
+.swiper-slide span,
+.swiper-slide div:not(.swiper-zoom-container){
     position: absolute !important;
     z-index: 999 !important;
+    color: #000000 !important;
+    display: block !important;
 }
