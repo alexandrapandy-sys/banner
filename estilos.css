@@ -377,3 +377,12 @@ footer {
     object-fit: cover !important;
     object-position: center !important;
 }
+
+.swiper-slide h1,
+.swiper-slide h2,
+.swiper-slide h3,
+.swiper-slide p,
+.swiper-slide span{
+    position: absolute !important;
+    z-index: 999 !important;
+}
