@@ -408,5 +408,17 @@ footer {
 }
 
 .swiper-slide-text * {
-  color: #ffffff !important; /
+  color: #ffffff !important; 
+}
+
+.swiper-slide-active .swiper-slide-text {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+.swiper-slide-text {
+  position: absolute !important;
+  z-index: 99999 !important;
+  pointer-events: auto !important; 
 }
