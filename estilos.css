@@ -397,3 +397,16 @@ footer {
   box-sizing: border-box; 
 }
 
+.swiper-wrapper {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.swiper-slide {
+  position: relative !important;
+  z-index: 3 !important;
+}
+
+.swiper-slide-text * {
+  color: #ffffff !important; /
+}
