@@ -368,7 +368,7 @@ footer {
 .swiper, .swiper-container {
     width: 100% !important;
     height:500px !important;
-    min-height:500px; !important;
+    min-height:500px !important;
 }
 
 .swiper-slide img{
@@ -383,13 +383,17 @@ footer {
     z-index: 1;
 }
 
-.swiper-slide-text{
-    position: absolute;
-    z-index: 9999 !important;
-    color: white; !important:
-    text-align: left !important;
-    width: 100%;
-    padding-left: 10%;
-    box-sizing: border-box;
+.swiper-slide-text {
+  position: absolute;
+  left: 0;
+  top: 50%;                   
+  transform: translateY(-50%);  
+  z-index: 9999 !important; 
+  color: white !important;    
+  text-align: left !important; 
+  width: 100%; 
+  padding-left: 10%; 
+  padding-right: 10%; 
+  box-sizing: border-box; 
 }
-}
+
