@@ -365,69 +365,65 @@ footer {
     outline: none;
 }
 
-.swiper, .swiper-container {
-    width: 100% !important;
-    height:500px !important;
-    min-height:500px !important;
-}
+/* --- CONFIGURACIÓN COMPLETA DEL BANNER (SWIPER) --- */
 
-.swiper-slide img{
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center !important;
+.swiper, .swiper-container { 
+  width: 100% !important; 
+  height: 500px !important; 
+  min-height: 500px !important; 
+  transform-style: flat !important; 
+  backface-visibility: visible !important; 
+  perspective: none !important; 
+} 
 
-    position: absolute;
-    top: 0 !important;
-    left: 0 !important;
-    z-index: 1;
-}
-
-.swiper-slide-text {
-  position: absolute;
-  left: 0;
-  top: 50%;                   
-  transform: translateY(-50%);  
-  z-index: 9999 !important; 
-  color: white !important;    
-  text-align: left !important; 
-  width: 100%; 
-  padding-left: 10%; 
-  padding-right: 10%; 
-  box-sizing: border-box; 
-}
-
-.swiper, .swiper-container, .swiper-wrapper, .swiper-slide {
+.swiper-wrapper {
   transform-style: flat !important;
   backface-visibility: visible !important;
   perspective: none !important;
 }
 
-.swiper-slide {
-  position: relative !important;
+.swiper-slide { 
+  position: relative !important; 
   overflow: visible !important; 
-  display: flex !important;
+  display: flex !important; 
   align-items: center !important; 
+  transform-style: flat !important; 
+  backface-visibility: visible !important; 
+  perspective: none !important; 
 }
+
+.swiper-slide img { 
+  width: 100% !important; 
+  height: 100% !important; 
+  object-fit: cover !important; 
+  object-position: center !important; 
+  position: absolute; 
+  top: 0 !important; 
+  left: 0 !important; 
+  z-index: 1; 
+} 
 
 .swiper-slide-text {
   position: absolute !important;
+  left: 10% !important; /* Separa la tarjeta del borde izquierdo */
   top: 50% !important;
   transform: translateY(-50%) !important;
-  left: 0 !important;
-  z-index: 999999 !important; 
+  z-index: 999999 !important; /* Capa superior por encima de la imagen */
   visibility: visible !important;
   opacity: 1 !important;
   display: block !important;
+  text-align: left !important;
+  box-sizing: border-box;
+
+  background: rgba(0, 0, 0, 0.65) !important; /* Fondo negro con 65% de opacidad */
+  padding: 35px !important;
+  border-radius: 15px !important; /* Bordes redondeados modernos */
+  max-width: 450px !important; /* Evita que la tarjeta ocupe todo el ancho */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important; /* Sombra suave para dar profundidad */
 }
 
-.swiper-slide-text, 
-.swiper-slide-text *, 
-.swiper-slide-text h1, 
-.swiper-slide-text h2, 
-.swiper-slide-text p {
+.swiper-slide-text * {
   color: #ffffff !important;
   visibility: visible !important;
   opacity: 1 !important;
 }
-
