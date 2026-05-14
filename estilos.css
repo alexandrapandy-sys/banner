@@ -376,16 +376,18 @@ footer {
     height: 100% !important;
     object-fit: cover !important;
     object-position: center !important;
+
+    position: absolute;
+    z-index: 1;
 }
 
-.swiper-slide h1,
-.swiper-slide h2,
-.swiper-slide h3,
-.swiper-slide p,
-.swiper-slide span,
-.swiper-slide div:not(.swiper-zoom-container){
-    position: absolute !important;
-    z-index: 999 !important;
-    color: #000000 !important;
-    display: block !important;
+.swiper-slide-text{
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: left;
+    width: 100%;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
 }
