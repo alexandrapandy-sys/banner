@@ -378,14 +378,16 @@ footer {
     object-position: center !important;
 
     position: absolute;
+    top: 0 !important;
+    left: 0 !important;
     z-index: 1;
 }
 
 .swiper-slide-text{
-    position: relative;
-    z-index: 2;
-    color: white;
-    text-align: left;
+    position: absolute;
+    z-index: 9999 !important;
+    color: white; !important:
+    text-align: left !important;
     width: 100%;
     padding-left: 10%;
     box-sizing: border-box;
