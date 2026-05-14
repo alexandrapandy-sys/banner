@@ -364,3 +364,16 @@ footer {
     object-fit: contain;   /* ESTA ES LA CLAVE: Muestra el video completo */
     outline: none;
 }
+
+.swiper, .swiper-container {
+    width: 100% !important;
+    height:500px !important;
+    min-height:500px; !important;
+}
+
+.swiper-slide img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
